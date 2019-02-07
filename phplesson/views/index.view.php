@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
+<nav>
+    <ul>
+        <li>
+            <a href="/about.php">About</a>
+        </li>
+    </ul>
+</nav>
 
 <h1>
 Willkommen zu Verein Katze.
