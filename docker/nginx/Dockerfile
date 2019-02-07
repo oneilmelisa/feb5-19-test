@@ -1,0 +1,1 @@
+FROM matter/shibboleth-nginx
