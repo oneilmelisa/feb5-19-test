@@ -11,6 +11,6 @@ class Router
         if (array_key_exists($uri, $this->routes)) {
             return $this->routes['about/culture'];
         }
-//        throw new Exception('no route defined');
+        throw new Exception('no route defined HELP');
     }
 }
