@@ -10,6 +10,11 @@ $router = new Router;
 require 'routes.php';
 
 
-//dd($_SERVER['REQUEST_URI']);
-require $router -> direct('contact');
+
+$uri = (trim($_SERVER['REQUEST_URI'], '/'));
+//var_dump(trim($_SERVER['REQUEST_URI'], '/'));
+
+
+//require $router -> direct('about');
+require $router -> direct($uri);
 
