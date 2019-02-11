@@ -1,6 +1,6 @@
 <?php
 
-$database = require 'core/bootstrap.php';
+require 'core/bootstrap.php';
 
 //require 'Task.php';
 require 'functions.php';
@@ -11,15 +11,8 @@ require 'functions.php';
 //
 //
 //
-$uri = (trim($_SERVER['REQUEST_URI'], '/'));
-////var_dump(trim($_SERVER['REQUEST_URI'], '/'));
-//
-//
-////require $router -> direct('about');
-//require $router -> direct($uri);
-
-//$router =  Router::load('routes.php');
-//require $router->direct($uri);
+//$uri = (trim($_SERVER['REQUEST_URI'], '/'));
+// dd($app);
 require Router::load('routes.php')
-->direct($uri);
+->direct(Request::uri());
 
