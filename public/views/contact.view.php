@@ -1,17 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<nav>
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="about">About</a>
-        </li>
-
-    </ul>
-</nav>
+<?php require ('partials/nav.php'); ?>
 <h1>
     Contact
 </h1>

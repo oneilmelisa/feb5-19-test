@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-<nav>
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-    </ul>
-</nav>
+<?php require ('partials/nav.php'); ?>
 <h1>
-    About Us.
+    About Us here at <?= $name; ?>
 </h1>
 
 

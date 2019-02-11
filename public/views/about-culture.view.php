@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<nav>
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-    </ul>
-</nav>
+<?php require ('partials/nav.php'); ?>
 <h1>
    Culture
 </h1>
