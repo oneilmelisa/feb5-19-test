@@ -11,5 +11,5 @@ require 'routes.php';
 
 
 //dd($_SERVER['REQUEST_URI']);
-require $router -> direct('about/culture');
+require $router -> direct('contact');
 
