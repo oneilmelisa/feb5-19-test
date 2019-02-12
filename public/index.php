@@ -22,26 +22,41 @@ class Post
 {
     Public $title;
     public $published;
-    public function __construct($title, $published)
+    public function __construct($title, $author, $published)
     {
     $this->title = $title;
     $this->published = $published;
+    $this->author = $author;
     }
 }
 
 $posts = [
-    new Post('My 1st Post', true),
-    new Post('My 2nd Post', true),
-    new Post('My 3rd Post', true),
-    new Post('My 4th Post', false)
+    new Post('My 1st Post', 'MO', true),
+    new Post('My 2nd Post', 'MO',true),
+    new Post('My 3rd Post', 'FU', true),
+    new Post('My 4th Post','TY', false)
 
 ];
 
-$unpublishedPosts = array_filter($posts, function($post) {
-return ! $post->published;
-});
-$publishedPosts = array_filter($posts, function($post) {
-return $post->published;
-});
+//$unpublishedPosts = array_filter($posts, function($post) {
+//return ! $post->published;
+//});
+//$publishedPosts = array_filter($posts, function($post) {
+//return $post->published;
+//});
 
-dd($publishedPosts);
+$modified = array_map(function ($post)
+{
+return ['title' => $post->title];
+}, $posts);
+
+
+
+$posts = array_map(function ($post){
+    return (array) $post;
+}, $posts);
+
+$titles = array_column($posts, 'title');
+$author = array_column($posts, 'author');
+
+dd($author);
