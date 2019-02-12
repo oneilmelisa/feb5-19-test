@@ -36,4 +36,12 @@ $posts = [
     new Post('My 4th Post', false)
 
 ];
-dd($posts);
+
+$unpublishedPosts = array_filter($posts, function($post) {
+return ! $post->published;
+});
+$publishedPosts = array_filter($posts, function($post) {
+return $post->published;
+});
+
+dd($publishedPosts);
