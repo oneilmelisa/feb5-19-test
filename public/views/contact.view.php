@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-<body>
-<?php require ('partials/nav.php'); ?>
+<?php require ('partials/head.php'); ?>
 <h1>
     Contact
 </h1>
 
-
-
-
-</body>
-</html>
+<?php require ('partials/footer.php'); ?>

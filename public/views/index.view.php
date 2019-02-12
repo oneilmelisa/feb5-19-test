@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Documentitytytyty</title>
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
-<!--<style>-->
-<!--    body {-->
-<!--        background: #999;-->
-<!--    }-->
-<!--</style>-->
-</head>
-<body>
-
-<?php require ('partials/nav.php'); ?>
+<?php require ('partials/head.php'); ?>
 <h1>
 Willkommen zu Verein Katze.
 </h1>
@@ -34,6 +20,4 @@ Willkommen zu Verein Katze.
     <?php endforeach; ?>
 </ul>
 
-
-</body>
-</html>
+<?php require ('partials/footer.php'); ?>
